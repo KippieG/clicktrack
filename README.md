@@ -12,9 +12,16 @@ Public downloads are available from the [GitHub Releases page](https://github.co
 
 Current release assets:
 
-- Source archive for ClickTrack v1.0
+- `ClickTrack-v1.0.0-macOS.zip` developer beta app download
 
-When a signed `.app`, `.dmg`, or App Store build is ready, it should be added to the same Releases page.
+Important: the current GitHub download is a developer beta. It is signed with an Apple Development certificate, but it is not notarized yet. macOS Gatekeeper may show a warning on first launch.
+
+Pro purchases are not active in the direct-download build yet. The Pro tab may appear, but App Store purchase products are not available outside a configured App Store / StoreKit release.
+
+For the polished public release, publish either:
+
+- A Developer ID signed and notarized `.zip` or `.dmg` on GitHub Releases
+- A Mac App Store build with StoreKit products configured
 
 ## What ClickTrack Tracks
 
@@ -46,6 +53,16 @@ After launching ClickTrack:
 3. Open Accessibility.
 4. Enable ClickTrack.
 5. Restart ClickTrack if macOS asks for it.
+
+## Pro Status
+
+ClickTrack currently includes Pro screens, but Pro purchasing is not available in the GitHub direct-download build.
+
+Recommended launch options:
+
+- Temporarily make Pro features free in the direct-download build.
+- Hide the Pro tab until StoreKit is fully configured.
+- Use the Mac App Store if Pro purchases should work through Apple.
 
 ## Support
 
