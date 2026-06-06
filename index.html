@@ -3,151 +3,50 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ClickTrack is a private macOS menu bar app for tracking clicks, keystrokes, scrolls, focus sessions, streaks, and achievements.">
-    <meta property="og:title" content="ClickTrack - Private input analytics for macOS">
-    <meta property="og:description" content="Understand how you use your Mac. Counts only, stored locally, never shared.">
-    <meta property="og:image" content="assets/clicktrack-icon.png">
-    <title>ClickTrack - Private input analytics for macOS</title>
+    <meta name="description" content="Public download and support page for ClickTrack, a private macOS input analytics app.">
+    <title>ClickTrack Downloads</title>
     <link rel="icon" href="assets/clicktrack-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="ClickTrack home">
-        <img src="assets/clicktrack-icon.png" alt="">
-        <span>ClickTrack</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#features">Features</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#download">Download</a>
-      </nav>
-    </header>
-
-    <main id="top">
+    <main class="page">
       <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">macOS menu bar app</p>
-          <h1>ClickTrack</h1>
-          <p class="lede">Private input analytics for people who want to understand how they use their Mac.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#download">Get ClickTrack</a>
-            <a class="button secondary" href="#privacy">View privacy</a>
-          </div>
-          <dl class="stats-row" aria-label="Product highlights">
-            <div>
-              <dt>0</dt>
-              <dd>accounts</dd>
-            </div>
-            <div>
-              <dt>100%</dt>
-              <dd>local data</dd>
-            </div>
-            <div>
-              <dt>macOS</dt>
-              <dd>13+</dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="product-shot" aria-label="ClickTrack dashboard preview">
-          <div class="window">
-            <div class="window-bar">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="app-layout">
-              <aside>
-                <div class="mini-brand">
-                  <img src="assets/clicktrack-icon.png" alt="">
-                  <strong>ClickTrack</strong>
-                </div>
-                <div class="status live">LIVE</div>
-                <div class="nav active">Today</div>
-                <div class="nav">Week</div>
-                <div class="nav">Mouse</div>
-                <div class="nav">Keyboard</div>
-                <div class="nav">Focus</div>
-              </aside>
-              <section class="dashboard">
-                <div class="dashboard-head">
-                  <div>
-                    <p>Today</p>
-                    <h2>18,426 inputs</h2>
-                  </div>
-                  <span>84 CPM</span>
-                </div>
-                <div class="metric-grid">
-                  <div><b>7,240</b><span>clicks</span></div>
-                  <div><b>9,880</b><span>keys</span></div>
-                  <div><b>1,306</b><span>scrolls</span></div>
-                </div>
-                <div class="chart" aria-hidden="true">
-                  <i style="height: 34%"></i>
-                  <i style="height: 54%"></i>
-                  <i style="height: 46%"></i>
-                  <i style="height: 76%"></i>
-                  <i style="height: 62%"></i>
-                  <i style="height: 88%"></i>
-                  <i style="height: 71%"></i>
-                  <i style="height: 42%"></i>
-                </div>
-                <div class="achievement">
-                  <span>Achievement unlocked</span>
-                  <strong>Power User</strong>
-                </div>
-              </section>
-            </div>
-          </div>
+        <img class="app-icon" src="assets/clicktrack-icon.png" alt="">
+        <p class="eyebrow">macOS menu bar app</p>
+        <h1>ClickTrack Downloads</h1>
+        <p class="lede">This public GitHub page hosts downloads, release notes, setup notes, and privacy information for ClickTrack.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/KippieG/clicktrack/releases">Open Downloads</a>
+          <a class="button secondary" href="https://clicktrackapp.com">Visit clicktrackapp.com</a>
         </div>
       </section>
 
-      <section id="features" class="section">
-        <p class="eyebrow">Input intelligence</p>
-        <h2>See your rhythm without spying on yourself.</h2>
-        <div class="feature-grid">
-          <article>
-            <span class="icon">01</span>
-            <h3>Live input counters</h3>
-            <p>Track clicks, keystrokes, scrolls, CPM, WPM, active minutes, and app usage from a quiet menu bar dashboard.</p>
-          </article>
-          <article>
-            <span class="icon">02</span>
-            <h3>Focus and habits</h3>
-            <p>Review focus sessions, daily goals, streaks, heatmaps, hourly activity, and seven-day trends.</p>
-          </article>
-          <article>
-            <span class="icon">03</span>
-            <h3>Achievements</h3>
-            <p>Turn your own activity into milestones for clicks, keys, scrolls, speed, focus, distance, and consistency.</p>
-          </article>
-        </div>
+      <section class="grid" aria-label="ClickTrack information">
+        <article>
+          <span>01</span>
+          <h2>Download</h2>
+          <p>Use GitHub Releases for public builds and source archives. Signed app builds can be added there when ready.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>Setup</h2>
+          <p>ClickTrack needs macOS Accessibility permission to count global clicks, keystrokes, and scrolls.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>Privacy</h2>
+          <p>ClickTrack stores data locally, never records typed content, and does not require an account.</p>
+        </article>
       </section>
 
-      <section id="privacy" class="privacy">
-        <div>
-          <p class="eyebrow">Privacy first</p>
-          <h2>Counts only. No content. No cloud.</h2>
-        </div>
+      <section class="panel">
+        <h2>What ClickTrack tracks</h2>
         <ul>
-          <li>Never records what you type.</li>
-          <li>Stores data locally on your Mac.</li>
-          <li>No account, telemetry, or background uploads.</li>
-          <li>Accessibility permission is used only to count global input events.</li>
+          <li>Clicks, keystrokes, scrolls, CPM, WPM, and active minutes</li>
+          <li>Focus sessions, streaks, achievements, weekly history, and heatmaps</li>
+          <li>Counts and app usage only, not typed text or private content</li>
         </ul>
       </section>
-
-      <section id="download" class="download">
-        <img src="assets/clicktrack-icon.png" alt="" class="download-icon">
-        <p class="eyebrow">For macOS 13+</p>
-        <h2>Get ClickTrack for macOS.</h2>
-        <p>The public release page is ready for signed builds, beta downloads, or an App Store link when distribution is finalized.</p>
-        <a class="button primary" href="https://github.com/KippieG/clicktrack-marketing/releases" aria-label="Open ClickTrack releases on GitHub">Download for macOS</a>
-      </section>
     </main>
-
-    <footer>
-      <span>ClickTrack</span>
-      <span>Private macOS input analytics</span>
-    </footer>
   </body>
 </html>
