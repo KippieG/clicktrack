@@ -1,77 +1,95 @@
 # ClickTrack
 
-Private input analytics for macOS.
+<p align="center">
+  <img src="assets/clicktrack-icon.png" alt="ClickTrack app icon" width="112">
+</p>
 
-ClickTrack is a macOS menu bar app that helps you understand how you use your Mac by counting clicks, keystrokes, scrolls, focus sessions, streaks, and achievements.
+<h3 align="center">Private input analytics for macOS.</h3>
 
-Official website: [clicktrackapp.com](https://clicktrackapp.com)
+<p align="center">
+  Understand your clicks, keys, scrolls, focus sessions, streaks, and habits without recording what you type.
+</p>
 
-## Downloads
+<p align="center">
+  <a href="https://github.com/KippieG/clicktrack/releases/tag/v1.0.1"><strong>Download for macOS</strong></a>
+  ·
+  <a href="https://clicktrackapp.com">Website</a>
+  ·
+  <a href="docs/DISTRIBUTION.md">Distribution notes</a>
+</p>
 
-Public downloads are available from the [GitHub Releases page](https://github.com/KippieG/clicktrack/releases) and should also be linked from [clicktrackapp.com](https://clicktrackapp.com).
+<p align="center">
+  <img alt="macOS" src="https://img.shields.io/badge/macOS-13%2B-111111?style=for-the-badge&logo=apple&logoColor=white">
+  <img alt="Privacy first" src="https://img.shields.io/badge/Privacy-Local%20Data-00D8FF?style=for-the-badge">
+  <img alt="Trial" src="https://img.shields.io/badge/Trial-14%20Days-10B981?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/badge/Pro-License%20Key-F59E0B?style=for-the-badge">
+</p>
 
-Current release assets:
+![ClickTrack website preview](preview-desktop.png)
 
-- `ClickTrack-v1.0.1-direct-license-UNSIGNED.dmg` direct-license macOS test DMG
-- `ClickTrack-v1.0.1-direct-license-UNSIGNED.zip` direct-license macOS test build
+## Download
 
-Important: the current GitHub download is an ad-hoc signed test build for local testing. A polished public release should be exported with Developer ID, notarized by Apple, and packaged as a `.dmg`.
+ClickTrack is distributed as a direct macOS download, not through the App Store.
+
+| Build | Download | Notes |
+| --- | --- | --- |
+| macOS DMG | [ClickTrack-v1.0.1-direct-license-UNSIGNED.dmg](https://github.com/KippieG/clicktrack/releases/download/v1.0.1/ClickTrack-v1.0.1-direct-license-UNSIGNED.dmg) | Recommended local test download |
+| ZIP archive | [ClickTrack-v1.0.1-direct-license-UNSIGNED.zip](https://github.com/KippieG/clicktrack/releases/download/v1.0.1/ClickTrack-v1.0.1-direct-license-UNSIGNED.zip) | Fallback archive |
+
+> Current status: this is an ad-hoc signed test build for local testing. The final public DMG should be Developer ID signed, notarized by Apple, and then uploaded to the release page.
+
+## Why ClickTrack
+
+ClickTrack gives you a private dashboard for your Mac activity. It counts input patterns and productivity signals, then turns them into simple daily and weekly insights.
+
+| Live Counters | Focus Rhythm | Achievements |
+| --- | --- | --- |
+| Track clicks, keys, scrolls, CPM, WPM, active minutes, and app usage from a quiet menu bar app. | Review focus sessions, daily goals, streaks, hourly activity, heatmaps, and seven-day trends. | Turn activity into milestones for clicks, keys, scrolls, speed, focus, distance, and consistency. |
+
+## Privacy First
+
+ClickTrack is built around counting activity, not collecting content.
+
+- Never records what you type.
+- Stores data locally on your Mac.
+- Does not require an account.
+- Does not upload telemetry or analytics.
+- Uses macOS Accessibility permission only to count global input events.
 
 ## Trial and Pro
 
-ClickTrack uses the direct-download model:
+The direct-download build uses a website license model:
 
-- Download Free
-- 14-day full trial, no credit card
-- $9.99 one-time Pro purchase on the website
-- License key activation inside the app
+- Download free.
+- 14-day full trial, no credit card.
+- $9.99 one-time Pro purchase on the website.
+- License key activation inside ClickTrack.
 
-The direct-download app does not use App Store subscriptions. Pro should be sold through a web checkout such as Lemon Squeezy, then activated with a license key in ClickTrack.
+The app opens `https://clicktrackapp.com/pro` for Pro purchase. License activation is prepared for the Lemon Squeezy License API, so the App Store / StoreKit subscription flow is not used in this direct-download build.
 
-Implementation notes:
+## Install
 
-- Buy button opens `https://clicktrackapp.com/pro`
-- License activation uses the Lemon Squeezy License API
-- Tracking data stays local; only license activation contacts the license server
-- Pro access is active during the 14-day trial or when a valid license is stored locally
+1. Download the DMG from the latest release.
+2. Open the DMG and move `ClickTrack.app` to Applications.
+3. Launch ClickTrack.
+4. Open System Settings > Privacy & Security > Accessibility.
+5. Enable ClickTrack.
+6. Restart ClickTrack if macOS asks for it.
 
-## What ClickTrack Tracks
+If macOS blocks the current test build, right-click `ClickTrack.app` and choose Open. A notarized public DMG will remove this rough edge for normal users.
 
-ClickTrack tracks counts and activity patterns:
+## Release Checklist
 
-- Mouse clicks, right clicks, double clicks, and scrolls
-- Keystroke counts, shortcuts, backspaces, CPM, and WPM
-- Active minutes, app usage, focus sessions, and daily streaks
-- Hourly activity, weekly history, heatmaps, and achievements
+- [x] Public GitHub repository
+- [x] GitHub Pages download/support page
+- [x] Direct-download Pro/trial app flow
+- [x] DMG and ZIP release assets
+- [ ] Developer ID signed production build
+- [ ] Apple notarized DMG
+- [ ] Live Lemon Squeezy checkout connected to `clicktrackapp.com/pro`
 
-## Privacy
+## Links
 
-ClickTrack is designed to be private by default:
-
-- It never records what you type.
-- It stores data locally on your Mac.
-- It does not require an account.
-- It does not upload telemetry or analytics.
-- Accessibility permission is used only to count global input events.
-
-## macOS Permission
-
-macOS requires Accessibility permission for apps that count global clicks and keyboard events.
-
-After launching ClickTrack:
-
-1. Open System Settings.
-2. Go to Privacy & Security.
-3. Open Accessibility.
-4. Enable ClickTrack.
-5. Restart ClickTrack if macOS asks for it.
-
-## Distribution
-
-For public release outside the Mac App Store, use Developer ID signing and notarization. See [docs/DISTRIBUTION.md](docs/DISTRIBUTION.md).
-
-## Support
-
-For product information, updates, and support, use:
-
-[clicktrackapp.com](https://clicktrackapp.com)
+- Website: [clicktrackapp.com](https://clicktrackapp.com)
+- Releases: [github.com/KippieG/clicktrack/releases](https://github.com/KippieG/clicktrack/releases)
+- Distribution: [docs/DISTRIBUTION.md](docs/DISTRIBUTION.md)
