@@ -25,7 +25,7 @@
   <img alt="License" src="https://img.shields.io/badge/Pro-License%20Key-F59E0B?style=for-the-badge">
 </p>
 
-![ClickTrack live dashboard screenshot](assets/screenshots/clicktrack-live-data.png)
+![ClickTrack Today dashboard screenshot](assets/screenshots/clicktrack-live-today.png)
 
 ## Download
 
@@ -40,9 +40,9 @@ ClickTrack is distributed as a direct macOS download, not through the App Store.
 
 ## Screenshots
 
-| Real local dashboard | Product preview |
-| --- | --- |
-| ![ClickTrack real dashboard with local usage data](assets/screenshots/clicktrack-live-data.png) | ![ClickTrack full product preview](preview-desktop.png) |
+| Today | This Week | Product preview |
+| --- | --- | --- |
+| ![ClickTrack Today dashboard with live local data](assets/screenshots/clicktrack-live-today.png) | ![ClickTrack weekly dashboard with local usage data](assets/screenshots/clicktrack-live-data.png) | ![ClickTrack full product preview](preview-desktop.png) |
 
 ## Why ClickTrack
 
