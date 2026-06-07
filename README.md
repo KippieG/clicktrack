@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/KippieG/clicktrack/releases/tag/v1.0.1"><strong>Download for macOS</strong></a>
+  <a href="https://github.com/KippieG/clicktrack/releases/tag/v1.0.2"><strong>Download for macOS</strong></a>
   ·
   <a href="https://clicktrackapp.com">Website</a>
   ·
@@ -25,7 +25,7 @@
   <img alt="License" src="https://img.shields.io/badge/Pro-License%20Key-F59E0B?style=for-the-badge">
 </p>
 
-![ClickTrack website preview](preview-desktop.png)
+![ClickTrack dashboard screenshot](assets/screenshots/clicktrack-hero.png)
 
 ## Download
 
@@ -33,10 +33,16 @@ ClickTrack is distributed as a direct macOS download, not through the App Store.
 
 | Build | Download | Notes |
 | --- | --- | --- |
-| macOS DMG | [ClickTrack-v1.0.1-direct-license-UNSIGNED.dmg](https://github.com/KippieG/clicktrack/releases/download/v1.0.1/ClickTrack-v1.0.1-direct-license-UNSIGNED.dmg) | Recommended local test download |
-| ZIP archive | [ClickTrack-v1.0.1-direct-license-UNSIGNED.zip](https://github.com/KippieG/clicktrack/releases/download/v1.0.1/ClickTrack-v1.0.1-direct-license-UNSIGNED.zip) | Fallback archive |
+| Latest macOS build | [ClickTrack-v1.0.2-notarized-legacy-pro.zip](https://github.com/KippieG/clicktrack/releases/download/v1.0.2/ClickTrack-v1.0.2-notarized-legacy-pro.zip) | Xcode Direct Distribution export |
+| License-key test build | [v1.0.1 prerelease](https://github.com/KippieG/clicktrack/releases/tag/v1.0.1) | New direct-license flow, not notarized |
 
-> Current status: this is an ad-hoc signed test build for local testing. The final public DMG should be Developer ID signed, notarized by Apple, and then uploaded to the release page.
+> Current status: `v1.0.2` is the notarized legacy Pro build exported from Xcode. It should avoid the unverified warning from the previous unsigned test release. The newer license-key Pro flow still needs a fresh Developer ID notarized archive before replacing this public download.
+
+## Screenshots
+
+| Dashboard | Full product preview |
+| --- | --- |
+| ![ClickTrack dashboard](assets/screenshots/clicktrack-dashboard.png) | ![ClickTrack full preview](preview-desktop.png) |
 
 ## Why ClickTrack
 
@@ -58,34 +64,35 @@ ClickTrack is built around counting activity, not collecting content.
 
 ## Trial and Pro
 
-The direct-download build uses a website license model:
+The planned direct-download Pro model is:
 
 - Download free.
 - 14-day full trial, no credit card.
 - $9.99 one-time Pro purchase on the website.
 - License key activation inside ClickTrack.
 
-The app opens `https://clicktrackapp.com/pro` for Pro purchase. License activation is prepared for the Lemon Squeezy License API, so the App Store / StoreKit subscription flow is not used in this direct-download build.
+The source code has been prepared for `https://clicktrackapp.com/pro` and Lemon Squeezy license activation. The current `v1.0.2` public download is still the notarized legacy Pro build, so a fresh notarized archive is needed before the license-key version becomes the main download.
 
 ## Install
 
-1. Download the DMG from the latest release.
-2. Open the DMG and move `ClickTrack.app` to Applications.
+1. Download the ZIP from the latest release.
+2. Unzip it and move the app to Applications.
 3. Launch ClickTrack.
 4. Open System Settings > Privacy & Security > Accessibility.
 5. Enable ClickTrack.
 6. Restart ClickTrack if macOS asks for it.
 
-If macOS blocks the current test build, right-click `ClickTrack.app` and choose Open. A notarized public DMG will remove this rough edge for normal users.
+If macOS still blocks the app, right-click it and choose Open. Do not edit the exported app bundle after Xcode distribution, because changing bundle contents can invalidate the signature.
 
 ## Release Checklist
 
 - [x] Public GitHub repository
-- [x] GitHub Pages download/support page
+- [x] GitHub Releases download page
 - [x] Direct-download Pro/trial app flow
-- [x] DMG and ZIP release assets
-- [ ] Developer ID signed production build
-- [ ] Apple notarized DMG
+- [x] Developer ID / notarized legacy Pro ZIP
+- [x] App screenshots in README
+- [ ] Developer ID signed license-key production build
+- [ ] Apple notarized license-key DMG
 - [ ] Live Lemon Squeezy checkout connected to `clicktrackapp.com/pro`
 
 ## Links
