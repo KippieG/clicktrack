@@ -4,10 +4,10 @@
   <img src="assets/clicktrack-icon.png" alt="ClickTrack app icon" width="112">
 </p>
 
-<h3 align="center">Private input analytics for macOS.</h3>
+<h3 align="center">Private productivity analytics for how you actually use your Mac.</h3>
 
 <p align="center">
-  Understand your clicks, keys, scrolls, focus sessions, streaks, and habits without recording what you type.
+  Track clicks, keystrokes, scrolls, focus rhythm, streaks, and daily activity without recording what you type or sending your data to the cloud.
 </p>
 
 <p align="center">
