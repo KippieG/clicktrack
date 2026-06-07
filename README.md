@@ -12,6 +12,7 @@ Public downloads are available from the [GitHub Releases page](https://github.co
 
 Current release assets:
 
+- `ClickTrack-v1.0.1-direct-license-UNSIGNED.dmg` direct-license macOS test DMG
 - `ClickTrack-v1.0.1-direct-license-UNSIGNED.zip` direct-license macOS test build
 
 Important: the current GitHub download is an ad-hoc signed test build for local testing. A polished public release should be exported with Developer ID, notarized by Apple, and packaged as a `.dmg`.
