@@ -8,20 +8,31 @@ Official website: [clicktrackapp.com](https://clicktrackapp.com)
 
 ## Downloads
 
-Public downloads are available from the [GitHub Releases page](https://github.com/KippieG/clicktrack/releases).
+Public downloads are available from the [GitHub Releases page](https://github.com/KippieG/clicktrack/releases) and should also be linked from [clicktrackapp.com](https://clicktrackapp.com).
 
 Current release assets:
 
-- `ClickTrack-v1.0.0-macOS.zip` developer beta app download
+- `ClickTrack-v1.0.1-direct-license-UNSIGNED.zip` direct-license macOS test build
 
-Important: the current GitHub download is a developer beta. It is signed with an Apple Development certificate, but it is not notarized yet. macOS Gatekeeper may show a warning on first launch.
+Important: the current GitHub download is an ad-hoc signed test build for local testing. A polished public release should be exported with Developer ID, notarized by Apple, and packaged as a `.dmg`.
 
-Pro purchases are not active in the direct-download build yet. The Pro tab may appear, but App Store purchase products are not available outside a configured App Store / StoreKit release.
+## Trial and Pro
 
-For the polished public release, publish either:
+ClickTrack uses the direct-download model:
 
-- A Developer ID signed and notarized `.zip` or `.dmg` on GitHub Releases
-- A Mac App Store build with StoreKit products configured
+- Download Free
+- 14-day full trial, no credit card
+- $9.99 one-time Pro purchase on the website
+- License key activation inside the app
+
+The direct-download app does not use App Store subscriptions. Pro should be sold through a web checkout such as Lemon Squeezy, then activated with a license key in ClickTrack.
+
+Implementation notes:
+
+- Buy button opens `https://clicktrackapp.com/pro`
+- License activation uses the Lemon Squeezy License API
+- Tracking data stays local; only license activation contacts the license server
+- Pro access is active during the 14-day trial or when a valid license is stored locally
 
 ## What ClickTrack Tracks
 
@@ -54,15 +65,9 @@ After launching ClickTrack:
 4. Enable ClickTrack.
 5. Restart ClickTrack if macOS asks for it.
 
-## Pro Status
+## Distribution
 
-ClickTrack currently includes Pro screens, but Pro purchasing is not available in the GitHub direct-download build.
-
-Recommended launch options:
-
-- Temporarily make Pro features free in the direct-download build.
-- Hide the Pro tab until StoreKit is fully configured.
-- Use the Mac App Store if Pro purchases should work through Apple.
+For public release outside the Mac App Store, use Developer ID signing and notarization. See [docs/DISTRIBUTION.md](docs/DISTRIBUTION.md).
 
 ## Support
 
