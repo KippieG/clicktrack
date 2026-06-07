@@ -11,8 +11,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/KippieG/clicktrack/releases/tag/v1.0.2"><strong>Download for macOS</strong></a>
-  ·
+  <a href="https://github.com/KippieG/clicktrack/releases/tag/v1.0.2">
+    <img alt="Download for Mac" src="https://img.shields.io/badge/Download_for_Mac-000000?style=for-the-badge&logo=apple&logoColor=white&labelColor=000000&color=111111">
+  </a>
+</p>
+
+<p align="center">
   <a href="https://clicktrackapp.com">Website</a>
   ·
   <a href="docs/DISTRIBUTION.md">Distribution notes</a>
